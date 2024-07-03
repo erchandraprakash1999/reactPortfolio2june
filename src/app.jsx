@@ -398,11 +398,11 @@ const App = () => {
               >
                 MY_SKILLS
               </h1>
-              <p className="tabs pt-2" style={{ wordSpacing: "4px" }}>
+              <p className="tabs pt-2 mb-5" style={{ wordSpacing: "4px" }}>
                 Full Stack & MERN Stack Developer based in <b>INDIA.</b>
               </p>
               <p>
-                <h6 style={{ display: "inline" }}>HTML</h6>
+                <h6 style={{ display: "inline" }} >HTML</h6>
                 <span style={{ marginLeft: "70px" }}>25%</span>
                 <div className="progress">
                   <h4></h4>
@@ -574,7 +574,7 @@ const App = () => {
                 Full Stack & MERN Stack Developer based in <b>INDIA.</b>
               </p>
 
-              <div className="col-md-12">
+              <div className="col-md-12 mt-5">
                 <div className="container-fluid">
                   <div className="row gy-3 gy-md-4">
                     <div className="col-12 col-lg-4">
@@ -757,8 +757,8 @@ const App = () => {
       </section>
       <hr />
       <section id="portfolio">
-        <div className="jumbotron jb">
-          <div className="row">
+        <div className="jumbotron jb ">
+          <div className="row ">
             <div className="col-md-12" style={{ paddingLeft: "60px" }}>
               <h1
                 className="largeh"
@@ -778,7 +778,7 @@ const App = () => {
             </div>
           </div>
 
-          <div className="row text-center">
+          <div className="row text-center mt-4">
             <div className="col-md-4 mb-4">
               <div className="card h-100"  style={{borderRadius:"40px"}}>
                 <img className="card-img-top m-auto" src={rest} alt="Design" style={{width:"80%"}}></img>
@@ -868,7 +868,7 @@ const App = () => {
       <hr />
       <section id="services">
         <div className="jumbotron jb">
-          <div className="row">
+          <div className="row mt-2">
             <div className="col-md-12" style={{ paddingLeft: "60px" }}>
               <h1
                 className="largeh"
@@ -889,7 +889,7 @@ const App = () => {
               </div>
              
     
-      <div id="carouselExampleControls" data-mdb-carousel-init class="carousel slide text-center carousel-dark" data-mdb-ride="carousel">
+      <div id="carouselExampleControls" data-mdb-carousel-init class="carousel slide text-center carousel-dark mt-4" data-mdb-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item active">
       <img class="rounded-circle shadow-1-strong mb-4"
@@ -1029,7 +1029,7 @@ const App = () => {
         onSwiper={(swiper) => console.log(swiper)}
         onSlideChange={() => console.log('slide change')}
       >
-        <SwiperSlide className="lastc text-center p-3">
+        <SwiperSlide className="lastc text-center p-3 ">
           <img src={html} alt="" style={{ height: "15vh", width: "10vw" }} className="pt-1" />
           <h5 className="mt-4">HTML</h5>
         </SwiperSlide>
@@ -1099,7 +1099,7 @@ const App = () => {
               </p>
               </div>
               
-    <div className="container">
+    <div className="container mt-5">
       <div className="contact__wrapper shadow-lg mt-n9">
         <div className="row no-gutters">
           <div className="col-md-5 contact-info__wrapper gradient-brand-color pr-5 order-lg-2">
