@@ -981,57 +981,102 @@ const App = () => {
 
 
 <section id="services">
-        <div className="jumbotron jb">
-          <div className="row">
-            <div className="col-md-12" style={{ paddingLeft: "60px" }}>
-              <h1
-                className="largeh"
-                style={{
-                  borderBottom: "2px solid transparent",
-                  borderImage:
-                    "linear-gradient(0.25turn, rgba(255,249,34), rgba(255,0,128), rgba(56,2,155,0))",
-                  borderImageSlice: "1",
-                  width: "20%",
-                }}
-              >
-                TECHNOLOGIES
-              </h1>
-              <p className="tabs pt-2" style={{ wordSpacing: "4px" }}>
-              Transforming conceptual ideas into touchable realities
-              </p>
-              </div>
-              <Swiper className="mt-5"
-      // install Swiper modules
-      modules={[Navigation, Pagination, Scrollbar, A11y]}
-      spaceBetween={10}
-      slidesPerView={6}
-      navigation
-      pagination={{ clickable: true }}
-      
-      onSwiper={(swiper) => console.log(swiper)}
-      onSlideChange={() => console.log('slide change')}
-    >
-      <SwiperSlide className="lastc text-center p-3"><img src={html} alt="" style={{height:"15vh",width:"10vw"}} className="pt-1" /> <h5 className="mt-4">HTML</h5>  </SwiperSlide>
-      <SwiperSlide className="lastc text-center p-3"><img src={css} alt="" style={{height:"15vh",width:"10vw"}}  className="pt-1"/><h5 className="mt-4">CSS</h5></SwiperSlide>
-      <SwiperSlide className="lastc text-center p-3"><img src={js} alt="" style={{height:"15vh",width:"10vw"}} className="pt-1" /><h5 className="mt-4">Javascript</h5></SwiperSlide>
-      <SwiperSlide className="lastc text-center p-3"><img src={react} alt="" style={{height:"15vh",width:"10vw"}} className="pt-1" /><h5 className="mt-4">React js</h5></SwiperSlide>
-      
-
-   <SwiperSlide className="lastc text-center p-3"><img src={node} alt="" style={{height:"15vh",width:"10vw"}} className="pt-1" /><h5 className="mt-4">Node JS</h5></SwiperSlide>
-   <SwiperSlide className="lastc text-center p-3"><img src={express} alt="" style={{height:"15vh",width:"10vw"}} className="pt-1" /><h5 className="mt-4">Express JS</h5></SwiperSlide>
-      <SwiperSlide className="lastc text-center p-3"><img src={mongodb} alt="" style={{height:"15vh",width:"10vw"}}className="pt-1" /><h5 className="mt-4">Mongo DB</h5></SwiperSlide>
-      <SwiperSlide className="lastc text-center p-3"><img src={python} alt="" style={{height:"15vh",width:"10vw"}}  className="pt-1"/><h5 className="mt-4">Python</h5></SwiperSlide>
-   <SwiperSlide className="lastc text-center p-3"><img src={java} alt="" style={{height:"15vh",width:"10vw"}} className="pt-1" /><h5 className="mt-4">Java</h5></SwiperSlide>
-   <SwiperSlide className="lastc text-center p-3"><img src={github} alt="" style={{height:"15vh",width:"10vw"}} className="pt-1" /><h5 className="mt-4">Github</h5></SwiperSlide>
-      
-      ...
-    </Swiper>
-              </div>
-              
-      
+  <div className="jumbotron jb">
+    <div className="row">
+      <div className="col-12" style={{ paddingLeft: "20px" }}>
+        <h1
+          className="largeh"
+          style={{
+            borderBottom: "2px solid transparent",
+            borderImage:
+              "linear-gradient(0.25turn, rgba(255,249,34), rgba(255,0,128), rgba(56,2,155,0))",
+            borderImageSlice: "1",
+            width: "fit-content",
+          }}
+        >
+          TECHNOLOGIES
+        </h1>
+        <p className="tabs pt-2" style={{ wordSpacing: "4px" }}>
+          Transforming conceptual ideas into touchable realities
+        </p>
       </div>
-     
-    </section>
+
+      <Swiper
+        className="mt-5"
+        modules={[Navigation, Pagination, Scrollbar, A11y]}
+        spaceBetween={10}
+        slidesPerView={1}
+        breakpoints={{
+          // when window width is >= 576px
+          576: {
+            slidesPerView: 2,
+          },
+          // when window width is >= 768px
+          768: {
+            slidesPerView: 3,
+          },
+          // when window width is >= 992px
+          992: {
+            slidesPerView: 4,
+          },
+          // when window width is >= 1200px
+          1200: {
+            slidesPerView: 6,
+          },
+        }}
+        navigation
+        pagination={{ clickable: true }}
+        onSwiper={(swiper) => console.log(swiper)}
+        onSlideChange={() => console.log('slide change')}
+      >
+        <SwiperSlide className="lastc text-center p-3">
+          <img src={html} alt="" style={{ height: "15vh", width: "10vw" }} className="pt-1" />
+          <h5 className="mt-4">HTML</h5>
+        </SwiperSlide>
+        <SwiperSlide className="lastc text-center p-3">
+          <img src={css} alt="" style={{ height: "15vh", width: "10vw" }} className="pt-1" />
+          <h5 className="mt-4">CSS</h5>
+        </SwiperSlide>
+        <SwiperSlide className="lastc text-center p-3">
+          <img src={js} alt="" style={{ height: "15vh", width: "10vw" }} className="pt-1" />
+          <h5 className="mt-4">Javascript</h5>
+        </SwiperSlide>
+        <SwiperSlide className="lastc text-center p-3">
+          <img src={react} alt="" style={{ height: "15vh", width: "10vw" }} className="pt-1" />
+          <h5 className="mt-4">React js</h5>
+        </SwiperSlide>
+
+        <SwiperSlide className="lastc text-center p-3">
+          <img src={node} alt="" style={{ height: "15vh", width: "10vw" }} className="pt-1" />
+          <h5 className="mt-4">Node JS</h5>
+        </SwiperSlide>
+        <SwiperSlide className="lastc text-center p-3">
+          <img src={express} alt="" style={{ height: "15vh", width: "10vw" }} className="pt-1" />
+          <h5 className="mt-4">Express JS</h5>
+        </SwiperSlide>
+        <SwiperSlide className="lastc text-center p-3">
+          <img src={mongodb} alt="" style={{ height: "15vh", width: "10vw" }} className="pt-1" />
+          <h5 className="mt-4">Mongo DB</h5>
+        </SwiperSlide>
+        <SwiperSlide className="lastc text-center p-3">
+          <img src={python} alt="" style={{ height: "15vh", width: "10vw" }} className="pt-1" />
+          <h5 className="mt-4">Python</h5>
+        </SwiperSlide>
+        <SwiperSlide className="lastc text-center p-3">
+          <img src={java} alt="" style={{ height: "15vh", width: "10vw" }} className="pt-1" />
+          <h5 className="mt-4">Java</h5>
+        </SwiperSlide>
+        <SwiperSlide className="lastc text-center p-3">
+          <img src={github} alt="" style={{ height: "15vh", width: "10vw" }} className="pt-1" />
+          <h5 className="mt-4">Github</h5>
+        </SwiperSlide>
+        ...
+      </Swiper>
+    </div>
+  </div>
+
+  
+</section>
     <hr />
     <section id="contact">
         <div className="jumbotron jb">
