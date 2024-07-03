@@ -6,9 +6,11 @@ import myimg from "./assets/vinaynight.jpg";
 import tictac from "./assets/tdownload.jfif";
 import rest from "./assets/download (1).png";
 import todo from "./assets/download.png";
-import html from "./assets/html.png"
+import html from "./assets/html2.png"
 import css from "./assets/css.png"
 import js from "./assets/js.png"
+import react from "./assets/react.png"
+import github from "./assets/github.png"
 import node from "./assets/node.png"
 import express from "./assets/express.png"
 import mongodb from "./assets/mongodb.png"
@@ -16,6 +18,15 @@ import sql from "./assets/sql.png"
 import python from "./assets/python.png"
 import java from "./assets/java.png"
 
+import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
+
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import 'swiper/css/scrollbar';
 
 
 const App = () => {
@@ -989,100 +1000,37 @@ const App = () => {
               Transforming conceptual ideas into touchable realities
               </p>
               </div>
+              <Swiper className="mt-5"
+      // install Swiper modules
+      modules={[Navigation, Pagination, Scrollbar, A11y]}
+      spaceBetween={10}
+      slidesPerView={6}
+      navigation
+      pagination={{ clickable: true }}
+      
+      onSwiper={(swiper) => console.log(swiper)}
+      onSlideChange={() => console.log('slide change')}
+    >
+      <SwiperSlide className="lastc text-center p-3"><img src={html} alt="" style={{height:"15vh",width:"10vw"}} className="pt-1" /> <h5 className="mt-4">HTML</h5>  </SwiperSlide>
+      <SwiperSlide className="lastc text-center p-3"><img src={css} alt="" style={{height:"15vh",width:"10vw"}}  className="pt-1"/><h5 className="mt-4">CSS</h5></SwiperSlide>
+      <SwiperSlide className="lastc text-center p-3"><img src={js} alt="" style={{height:"15vh",width:"10vw"}} className="pt-1" /><h5 className="mt-4">Javascript</h5></SwiperSlide>
+      <SwiperSlide className="lastc text-center p-3"><img src={react} alt="" style={{height:"15vh",width:"10vw"}} className="pt-1" /><h5 className="mt-4">React js</h5></SwiperSlide>
+      
+
+   <SwiperSlide className="lastc text-center p-3"><img src={node} alt="" style={{height:"15vh",width:"10vw"}} className="pt-1" /><h5 className="mt-4">Node JS</h5></SwiperSlide>
+   <SwiperSlide className="lastc text-center p-3"><img src={express} alt="" style={{height:"15vh",width:"10vw"}} className="pt-1" /><h5 className="mt-4">Express JS</h5></SwiperSlide>
+      <SwiperSlide className="lastc text-center p-3"><img src={mongodb} alt="" style={{height:"15vh",width:"10vw"}}className="pt-1" /><h5 className="mt-4">Mongo DB</h5></SwiperSlide>
+      <SwiperSlide className="lastc text-center p-3"><img src={python} alt="" style={{height:"15vh",width:"10vw"}}  className="pt-1"/><h5 className="mt-4">Python</h5></SwiperSlide>
+   <SwiperSlide className="lastc text-center p-3"><img src={java} alt="" style={{height:"15vh",width:"10vw"}} className="pt-1" /><h5 className="mt-4">Java</h5></SwiperSlide>
+   <SwiperSlide className="lastc text-center p-3"><img src={github} alt="" style={{height:"15vh",width:"10vw"}} className="pt-1" /><h5 className="mt-4">Github</h5></SwiperSlide>
+      
+      ...
+    </Swiper>
               </div>
               
-      <div className="row mt-5 mb-5">
-        <div className="col-md-2 mb-2 ">
-          <div className="card lastc">
-            <div className="bg-image hover-overlay text-center p-2 " data-mdb-ripple-color="light">
-              <img src={html} className="" alt="Card 1" style={{height:"15vh"}} />
-              <a href="#!">
-                <div className="mask" style={{ backgroundColor: 'rgba(251, 251, 251, 0.15)' }}></div>
-              </a>
-            </div>
-            <div className="card-body text-center list-group-item" style={{borderTop:"1px black solid"}}>
-              <h5 className="card-title">HTML</h5>
-              
-            </div>
-          </div>
-        </div>
-
-        <div className="col-md-2 mb-2 ">
-          <div className="card lastc">
-            <div className="bg-image hover-overlay text-center p-2 " data-mdb-ripple-color="light">
-              <img src={css} className="" alt="Card 1" style={{height:"15vh"}} />
-              <a href="#!">
-                <div className="mask" style={{ backgroundColor: 'rgba(251, 251, 251, 0.15)' }}></div>
-              </a>
-            </div>
-            <div className="card-body text-center list-group-item" style={{borderTop:"1px black solid"}}>
-              <h5 className="card-title">CSS</h5>
-              
-            </div>
-          </div>
-        </div>
-
-        <div className="col-md-2 mb-2 ">
-          <div className="card lastc">
-            <div className="bg-image hover-overlay text-center p-2 " data-mdb-ripple-color="light">
-              <img src={js} className="" alt="Card 1" style={{height:"15vh"}} />
-              <a href="#!">
-                <div className="mask" style={{ backgroundColor: 'rgba(251, 251, 251, 0.15)' }}></div>
-              </a>
-            </div>
-            <div className="card-body text-center list-group-item" style={{borderTop:"1px black solid"}}>
-              <h5 className="card-title">JS</h5>
-             
-            </div>
-          </div>
-        </div>
-
-        <div className="col-md-2 mb-2 ">
-          <div className="card lastc">
-            <div className="bg-image hover-overlay text-center p-2 " data-mdb-ripple-color="light">
-              <img src={node} className="" alt="Card 1" style={{height:"15vh"}} />
-              <a href="#!">
-                <div className="mask" style={{ backgroundColor: 'rgba(251, 251, 251, 0.15)' }}></div>
-              </a>
-            </div>
-            <div className="card-body text-center list-group-item" style={{borderTop:"1px black solid"}}>
-              <h5 className="card-title">NODE js</h5>
-             
-            </div>
-          </div>
-        </div>
-
-        <div className="col-md-2 mb-2 ">
-          <div className="card lastc">
-            <div className="bg-image hover-overlay text-center p-2 " data-mdb-ripple-color="light">
-              <img src={express} className="" alt="Card 1" style={{height:"15vh"}} />
-              <a href="#!">
-                <div className="mask" style={{ backgroundColor: 'rgba(251, 251, 251, 0.15)' }}></div>
-              </a>
-            </div>
-            <div className="card-body text-center list-group-item" style={{borderTop:"1px black solid"}}>
-              <h5 className="card-title">Express js</h5>
-              
-            </div>
-          </div>
-        </div>
-
-        <div className="col-md-2 mb-2 ">
-          <div className="card lastc">
-            <div className="bg-image hover-overlay text-center p-2 " data-mdb-ripple-color="light">
-              <img src={mongodb} className="" alt="Card 1" style={{height:"15vh"}} />
-              <a href="#!">
-                <div className="mask" style={{ backgroundColor: 'rgba(251, 251, 251, 0.15)' }}></div>
-              </a>
-            </div>
-            <div className="card-body text-center list-group-item " style={{borderTop:"1px black solid"}}>
-              <h5 className="card-title">Mongo DB</h5>
-             
-            </div>
-          </div>
-        </div>
+      
       </div>
-      </div>
+     
     </section>
     <hr />
     <section id="contact">
@@ -1281,7 +1229,7 @@ const App = () => {
       {/* Copyright */}
       <div className="text-center p-1" style={{ backgroundColor: 'rgba(0, 0, 0, 0.05)' }}>
         © 2020 Copyright:
-        <a className="text-body" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+        <a className="text-body" href="https://mdbootstrap.com/">VinayOG</a>
       </div>
       {/* Copyright */}
     </footer>
