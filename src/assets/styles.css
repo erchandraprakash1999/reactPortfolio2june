@@ -1,0 +1,197 @@
+/* Navbar styles */
+#navbar {
+  background-color: white;
+  box-shadow: 0px -5px 20px black;
+  z-index: 1;
+}
+
+.heading {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.tabs {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  color: black;
+  font-size: medium;
+}
+
+.active {
+  border-bottom: 2px solid transparent;
+  border-image: linear-gradient(0.25turn, rgba(255, 249, 34), rgba(255, 0, 128), rgba(56, 2, 155, 0));
+  border-image-slice: 1;
+  width: 100%;
+}
+
+/* Self image */
+#self {
+  border-radius: 50%;
+  background: radial-gradient(circle at 10% 20%, rgb(249, 57, 170) 9.8%, rgb(134, 176, 255) 94.9%);
+  color: #333;
+  /* Text color */
+  /* Apply a solid box shadow with gradient effect */
+  box-shadow: -5px -5px 0 0 rgba(249, 57, 170, 0.5), 5px 5px 0 0 rgba(134, 176, 255, 0.5), 0 0 0 5px rgba(0, 0, 0, 0.5);
+  /* Apply a solid 10px border */
+}
+
+/* Large headings */
+.largeh {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+/* Self image with background */
+.selfb {
+  background: radial-gradient(circle at 10% 20%, rgb(249, 57, 170) 9.8%, rgb(134, 176, 255) 94.9%);
+  color: #333;
+  /* Text color */
+  /* Apply a solid box shadow with gradient effect */
+  box-shadow: -5px -5px 0 0 rgba(249, 57, 170, 0.5), 5px 5px 0 0 rgba(134, 176, 255, 0.5), 0 0 0 5px rgba(0, 0, 0, 0.5);
+  /* Apply a solid 10px border */
+}
+
+/* Description text */
+.desch {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+/* Intro button */
+.introbtn {
+  padding: 10px;
+  border-radius: 14px;
+  font-weight: 800;
+  font-size: normal;
+}
+
+/* Background styles */
+body,
+.jb {
+  background: linear-gradient(123.5deg, rgb(244, 219, 251) 29.3%, rgb(255, 214, 214) 67.1%);
+}
+.bgc{
+  background: linear-gradient(123.5deg, rgb(244, 219, 251) 29.3%, rgb(255, 214, 214) 67.1%);
+
+}
+
+/* Gradient text effect */
+.gradient-text {
+  /* Create a gradient for text color */
+  background: linear-gradient(114.2deg, rgb(35, 118, 174) 22.6%, rgb(200, 73, 173) 67.7%);
+  -webkit-background-clip: text;
+  /* Clip the gradient to the text */
+  background-clip: text;
+  color: transparent;
+  /* Set text color as transparent */
+}
+.card-row {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 1rem; /* Adjust the gap as needed */
+  margin: 0; /* Remove default margins for <p> */
+}
+
+.card {
+  flex: 1 1 calc(50% - 0rem); /* Two cards per row */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+#cardbg{
+  background-image: linear-gradient(white,#FF9FF3 , #D3D3D3);
+}
+.hv:hover{
+  border-bottom: 4px solid transparent;
+  border-image: linear-gradient(0.25turn, rgba(255, 249, 34), rgba(255, 0, 128), rgba(56, 2, 155, 0));
+  border-image-slice: 2;
+  width: 20%;
+
+}
+.multi-item-carousel{
+  .carousel-inner{
+    > .item{
+      transition: 500ms ease-in-out left;
+    }
+    .active{
+      &.left{
+        left:-33%;
+      }
+      &.right{
+        left:33%;
+      }
+    }
+    .next{
+      left: 33%;
+    }
+    .prev{
+      left: -33%;
+    }
+    @media all and (transform-3d), (-webkit-transform-3d) {
+      > .item{
+         
+        transition: 500ms ease-in-out left;
+        transition: 500ms ease-in-out all;
+        backface-visibility: visible;
+        transform: none!important;
+      }
+    }
+  }
+  .carouse-control{
+    &.left, &.right{
+      background-image: none;
+    }
+  }
+}
+.lastc{
+  border-radius: 20px;
+  background-image: linear-gradient(white,#FF9FF3 , #D3D3D3);
+}
+.gradient-brand-color {
+  background-image: -webkit-linear-gradient(0deg, #376be6 0%, #6470ef 100%);
+  background-image: -ms-linear-gradient(0deg, #376be6 0%, #6470ef 100%);
+  color: #fff;
+}
+.contact-info__wrapper {
+  overflow: hidden;
+  border-radius: .625rem .625rem 0 0
+}
+
+@media (min-width: 1024px) {
+  .contact-info__wrapper {
+      border-radius: 0 .625rem .625rem 0;
+      padding: 5rem !important
+  }
+}
+.contact-info__list span.position-absolute {
+  left: 0
+}
+.z-index-101 {
+  z-index: 101;
+}
+.list-style--none {
+  list-style: none;
+}
+.contact__wrapper {
+  background-color: #fff;
+  border-radius: 0 0 .625rem .625rem
+}
+
+@media (min-width: 1024px) {
+  .contact__wrapper {
+      border-radius: .625rem 0 .625rem .625rem
+  }
+}
+@media (min-width: 1024px) {
+  .contact-form__wrapper {
+      padding: 5rem !important
+  }
+}
+.shadow-lg, .shadow-lg--on-hover:hover {
+  box-shadow: 0 1rem 3rem rgba(132,138,163,0.1) !important;
+}
+.contact__wrapper{
+  background-image: linear-gradient(rgb(228, 183, 183),#f1beea , #ecd0b8);
+}
